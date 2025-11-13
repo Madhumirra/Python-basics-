@@ -1,5 +1,5 @@
+#pandas_basic_data_cleaning
 import pandas as pd
-
 data = {'Name': ['Ravi', 'Anu', 'Kumar', None],
         'Age': [20, None, 22, 21],
         'Score': [85, 90, None, 75]}
