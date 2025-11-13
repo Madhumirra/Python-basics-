@@ -1,0 +1,13 @@
+import pandas as pd
+
+data = {'Name': ['Ravi', 'Anu', 'Kumar', None],
+        'Age': [20, None, 22, 21],
+        'Score': [85, 90, None, 75]}
+df = pd.DataFrame(data)
+print("Original:\n", df)
+
+df['Name'].fillna('Unknown', inplace=True)
+df['Age'].fillna(df['Age'].mean(), inplace=True)
+df['Score'].fillna(df['Score'].median(), inplace=True)
+
+print("\nCleaned:\n", df)
